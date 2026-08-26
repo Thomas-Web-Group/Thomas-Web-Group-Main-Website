@@ -922,7 +922,8 @@
             <div class="contact-form-wrapper">
               <h2 class="text-center mb-4">Get in Touch</h2>
 
-              <form data-netlify="true" action="forms/contact.php" method="post" class="php-email-form">
+              <form name="contact" data-netlify="true" method="post">
+                <input type="hidden" name="form-name" value="contact">
                 <div class="row g-3">
                   <div class="col-md-6">
                     <div class="form-group">
