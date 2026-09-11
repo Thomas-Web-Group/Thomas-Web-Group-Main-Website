@@ -1,0 +1,52 @@
+---
+title: Website Project FAQ | Thomas Web Group
+description: Straight answers about Thomas Web Group website pricing, timelines, ownership, hosting, technology, and launch.
+layout: 'base.njk'
+permalink: /faq/
+---
+
+<main class="main">
+  <section class="section">
+    <div class="container section-title" data-aos="fade-up">
+      <h2>FAQ</h2>
+      <div><span>Website Project</span> <span class="description-title">FAQ</span></div>
+    </div>
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center"><div class="col-lg-9">
+        <h1>Website Project FAQ</h1>
+        <p class="lead">Straight answers about pricing, timelines, ownership, hosting, technology, and what happens after launch.</p>
+        <div class="accordion project-accordion mt-4" id="fullFaq">
+          {% set questions = [
+            ['How much does a website cost?', 'Most projects cost $1,500-$5,000.'],
+            ['How long does it take?', 'Most standard builds take approximately 2-3 weeks after content, access, and project requirements have been received.'],
+            ['Do I own the website?', 'Yes. Project-specific code transfers after payment in full. Third-party software, fonts, libraries, stock assets, and licensed resources retain their respective licenses.'],
+            ['Do I have to host with Thomas Web Group?', 'No. You can use managed hosting or move the finished site elsewhere.'],
+            ['What does managed hosting cost?', 'Managed static hosting is $39/month or $390/year.'],
+            ['Can I move my site later?', 'Yes. The project can be handed off for hosting elsewhere.'],
+            ['Can I edit the website myself?', 'Static sites generally use Thomas Web Group for occasional edits. A CMS can be used where regular internal editing is important.'],
+            ['What is ExpressionEngine?', 'ExpressionEngine is a content management system used when structured content editing, frequent publishing, or multiple editors make a CMS useful.'],
+            ['Do you use WordPress?', 'We generally prefer lightweight static builds or ExpressionEngine based on project requirements rather than defaulting every project to WordPress.'],
+            ['Do you provide SEO?', 'Foundational technical SEO is included. Ongoing SEO retainers and ranking guarantees are not currently offered.'],
+            ['What about AEO / AI search?', 'Modern search fundamentals are incorporated into the website. There is no separate AEO package.'],
+            ['Can you connect my CRM or scheduling system?', 'Usually, where the integration is straightforward and website-related. We handle the website-side connection, not ongoing administration of those platforms.'],
+            ['Do you write website copy?', 'Basic editing and page-structure guidance may be included. Large copywriting requirements can be scoped separately.'],
+            ['Do you provide photography?', 'Not as a default inclusion. Existing professional assets can be used and specialized creative work can be scoped separately.'],
+            ['Do you build ecommerce?', 'Large ecommerce builds are not part of the standard offer and are evaluated separately.'],
+            ['How many revisions are included?', 'Two consolidated revision rounds are included on standard projects.'],
+            ['What happens after launch?', 'You can use managed hosting or take the site elsewhere. Changes are available hourly.'],
+            ['How much are post-launch changes?', 'Post-launch development is $125/hour with a 30-minute minimum. Larger development requests are quoted before beginning.'],
+            ['Who will I actually work with?', 'Raymond handles project planning and development directly.'],
+            ['What do you need from me before starting?', 'Brand assets, business information, page and content requirements, necessary account access, existing website/domain information, and timely feedback.']
+          ] %}
+          {% for item in questions %}
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="full-faq-heading-{{ loop.index }}"><button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#full-faq-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="full-faq-{{ loop.index }}">{{ item[0] }}</button></h2>
+            <div id="full-faq-{{ loop.index }}" class="accordion-collapse collapse {% if loop.first %}show{% endif %}" data-bs-parent="#fullFaq"><div class="accordion-body"><p>{{ item[1] }}</p></div></div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="text-center mt-5"><h2>Still have a project-specific question?</h2><a href="/contact/" class="btn btn-primary">Get a Project Quote</a></div>
+      </div></div>
+    </div>
+  </section>
+</main>

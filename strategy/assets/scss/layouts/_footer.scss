@@ -9,6 +9,19 @@
   padding-bottom: 50px;
   position: relative;
 
+  .logo {
+    width: 100%;
+    justify-content: center;
+
+    img {
+      display: block;
+      width: auto;
+      max-width: 220px;
+      max-height: 48px;
+      object-fit: contain;
+    }
+  }
+
   .footer-top {
     padding-top: 50px;
     border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
