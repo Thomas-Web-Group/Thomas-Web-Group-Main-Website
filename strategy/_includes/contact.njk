@@ -1,0 +1,260 @@
+<!-- Contact Section -->
+<section id="contact" class="contact section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Contact</h2>
+    <div>
+      <span>Tell Us About</span>
+      <span class="description-title">Your Website</span>
+    </div>
+  </div>
+  <!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Contact Info Boxes -->
+    <div class="row gy-4 mb-5">
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-geo-alt"></i>
+          </div>
+          <div class="info-content">
+            <h4>Location</h4>
+            <p>East Tennessee</p>
+            <p>Serving businesses nationwide</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-envelope"></i>
+          </div>
+          <div class="info-content">
+            <h4>Email</h4>
+            <p>
+              <a href="mailto:raymond@thomaswebgroup.com">
+                raymond@thomaswebgroup.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-telephone"></i>
+          </div>
+          <div class="info-content">
+            <h4>Phone</h4>
+            <p>
+              <a href="tel:+14232258787">
+                (423) 225-8787
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="contact-info-box">
+          <div class="icon-box">
+            <i class="bi bi-currency-dollar"></i>
+          </div>
+          <div class="info-content">
+            <h4>Typical Projects</h4>
+            <p>$1,500-$5,000</p>
+            <p>Most standard sites launch in 2-3 weeks</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /Contact Info Boxes -->
+
+  </div>
+
+  <!-- Map Section -->
+  <div class="map-section" data-aos="fade-up" data-aos-delay="200">
+    <iframe
+      src="https://www.google.com/maps?q=East+Tennessee&output=embed"
+      width="100%"
+      height="500"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Thomas Web Group service area in East Tennessee"
+    ></iframe>
+  </div>
+  <!-- /Map Section -->
+
+  <!-- Contact Form Section -->
+  <div class="container form-container-overlap">
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="300">
+
+      <div class="col-lg-10">
+
+        <div class="contact-form-wrapper">
+
+          <h2 class="text-center mb-3">Get a Project Quote</h2>
+
+          <p class="text-center mb-4">
+            Give us a quick overview of what you need. For straightforward projects,
+            initial scoping can usually be handled by email. If something needs more
+            discussion, we'll schedule a short call.
+          </p>
+
+          <form name="contact" method="POST" data-netlify="true">
+
+            <input type="hidden" name="form-name" value="contact">
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-person"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="name"
+                      placeholder="Full Name"
+                      required
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-envelope"></i>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      placeholder="Work Email"
+                      required
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-building"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="business_name"
+                      placeholder="Business Name"
+                      required
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-globe"></i>
+                    <input
+                      type="url"
+                      class="form-control"
+                      name="current_website"
+                      placeholder="Current Website (Optional)"
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-layout-text-window"></i>
+
+                    <select
+                      class="form-control"
+                      name="project_type"
+                      required
+                    >
+                      <option value="" selected disabled>Project Type</option>
+                      <option value="new-website">New Website</option>
+                      <option value="website-redesign">Website Redesign</option>
+                      <option value="cms">ExpressionEngine / CMS</option>
+                      <option value="not-sure">Not Sure</option>
+                    </select>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-group">
+                  <div class="input-with-icon">
+                    <i class="bi bi-chat-dots message-icon"></i>
+
+                    <textarea
+                      class="form-control"
+                      name="message"
+                      placeholder="What do you need?"
+                      style="height: 180px"
+                      required
+                    ></textarea>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+
+                <div class="text-center mb-3">
+                  <p class="mb-1">
+                    <strong>Typical website budget:</strong> $1,500-$5,000
+                  </p>
+
+                  <p class="mb-1">
+                    <strong>Typical standard-site timeline:</strong>
+                    2-3 weeks after kickoff and content receipt
+                  </p>
+
+                  <p class="mb-0">
+                    <strong>Larger CMS projects:</strong> quoted separately
+                  </p>
+                </div>
+
+              </div>
+
+              <div class="col-12 text-center">
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-submit"
+                >
+                  GET A PROJECT QUOTE
+                </button>
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <!-- /Contact Form Section -->
+
+</section>
+<!-- /Contact Section -->
+
