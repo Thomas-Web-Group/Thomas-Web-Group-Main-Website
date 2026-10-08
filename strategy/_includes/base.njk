@@ -5,11 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>{{ title }}</title>
-  <meta name="description" content="{{ description or 'Thomas Web Group builds fast, professional business websites with straightforward scope, pricing, and ownership.' }}">
+  <meta name="description" content="{{ description or 'Thomas Web Group helps businesses attract customers and operate more efficiently with digital marketing, CRM, automation, and business systems.' }}">
   {% if noindex %}<meta name="robots" content="noindex, nofollow">{% endif %}
   {% if canonical %}<link rel="canonical" href="{{ canonical }}">{% endif %}
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:description" content="{{ description or 'Thomas Web Group builds fast, professional business websites with straightforward scope, pricing, and ownership.' }}">
+  <meta property="og:description" content="{{ description or 'Thomas Web Group helps businesses attract customers and operate more efficiently with digital marketing, CRM, automation, and business systems.' }}">
   <meta property="og:type" content="website">
   {% set assetRoot = './' %}
   {% if page.url != '/' %}{% set assetRoot = '../' %}{% endif %}
