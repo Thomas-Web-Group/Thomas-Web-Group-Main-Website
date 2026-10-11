@@ -1,12 +1,130 @@
 ---
-title: Contact Thomas Web Group | Let's Talk
-description: Tell Thomas Web Group what you want to improve. Discuss your website, social media, customer follow-up, or business systems.
+title: Contact Thomas Web Group | Get a Project Quote
+description: Tell Thomas Web Group about your website, marketing, CRM, or automation project and request a quote based on your business needs.
 layout: 'base.njk'
 permalink: /contact/
 ---
 
-<main class="main">
+<main class="main page-shell">
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-kicker">Get in Touch</div>
+      <h1>Tell Us About Your Project</h1>
+      <p>Whether you need a better website, more consistent online visibility, or help organizing your business systems, tell us a little about what you're working on.</p>
+    </div>
+  </section>
 
-  {% include "contact.njk" %}
+  <section class="section-block">
+    <div class="container contact-layout">
+      <aside class="contact-panel">
+        <div class="section-kicker">Project Inquiries</div>
+        <h2>Let's Talk About Your Business</h2>
+        <p>Share your goals, challenges, or ideas. We'll review the details and discuss what kind of solution may make sense.</p>
+        <ul>
+          <li>Email: raymond@thomaswebgroup.com</li>
+          <li>Phone: (423) 225-8787</li>
+          <li>Location: East Tennessee</li>
+        </ul>
+      </aside>
 
+      <div class="contact-panel">
+        <div class="section-kicker">Business Assessment</div>
+        <h2>Tell Us About Your Business</h2>
+        <p>No technical knowledge needed. Just tell us what's working, what could be better, and what you'd like to accomplish.</p>
+        <form class="contact-form" name="contact" method="POST" action="/thank-you/" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <div hidden>
+            <label for="bot-field">Leave this field empty</label>
+            <input id="bot-field" name="bot-field" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="form-grid">
+            <div class="field field-full">
+              <label for="primary-challenge">What's your biggest challenge right now? <span class="required-indicator">(required)</span></label>
+              <select id="primary-challenge" name="primary_challenge" required>
+                <option value="" selected disabled>Choose your main challenge</option>
+                <optgroup label="Getting Found Online">
+                  <option value="website-needs-improvement">Our website needs improvement</option>
+                  <option value="hard-to-find-online">We're hard to find on Google or AI search</option>
+                  <option value="inconsistent-social-media">We're not consistent on social media</option>
+                  <option value="need-more-discovery">We need more people discovering our business</option>
+                </optgroup>
+                <optgroup label="Turning Inquiries Into Customers">
+                  <option value="not-enough-inquiries">We're not getting enough calls or quote requests</option>
+                  <option value="lose-track-of-customers">We lose track of potential customers</option>
+                  <option value="slow-follow-up">We struggle to follow up quickly</option>
+                  <option value="estimates-to-jobs">We want more estimates to turn into jobs</option>
+                </optgroup>
+                <optgroup label="Running the Business">
+                  <option value="disorganized-customer-information">Customer information is disorganized</option>
+                  <option value="repetitive-tasks">Too much time goes to repetitive tasks</option>
+                  <option value="software-does-not-work-together">Our software doesn't work together</option>
+                  <option value="marketing-effectiveness">We don't know which marketing efforts are working</option>
+                </optgroup>
+                <option value="something-else">Something else</option>
+                <option value="not-sure">I'm not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="business-strength">What's already working well for your business?</label>
+              <select id="business-strength" name="business_strength">
+                <option value="" selected>Choose an area of strength</option>
+                <optgroup label="Getting Customers">
+                  <option value="referrals-word-of-mouth">Referrals and word of mouth</option>
+                  <option value="google-online-reviews">Google and online reviews</option>
+                  <option value="social-media">Social media</option>
+                  <option value="website-inquiries">Website inquiries</option>
+                </optgroup>
+                <optgroup label="Serving Customers">
+                  <option value="converting-inquiries">Turning inquiries into paying customers</option>
+                  <option value="customer-relationships">Customer relationships and repeat business</option>
+                  <option value="internal-processes">Internal processes and organization</option>
+                </optgroup>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <div class="field field-full">
+              <label for="desired-outcome">What would you most like to accomplish?</label>
+              <textarea id="desired-outcome" name="desired_outcome" rows="3" placeholder="For example: get more estimates each week, improve our Google visibility, or spend less time following up with customers."></textarea>
+            </div>
+
+            <div class="field field-full">
+              <label for="business-type">What kind of business do you run?</label>
+              <input id="business-type" name="business_type" type="text" placeholder="For example: landscaping, plumbing, construction, retail">
+            </div>
+
+            <section class="form-section field-full" aria-labelledby="contact-information-heading">
+              <h3 id="contact-information-heading">How Can We Reach You?</h3>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="name">Your Name <span class="required-indicator">(required)</span></label>
+                  <input id="name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email Address <span class="required-indicator">(required)</span></label>
+                  <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                  <label for="business-website">Business Website</label>
+                  <input id="business-website" name="website" type="text" inputmode="url" placeholder="yourbusiness.com" autocomplete="url">
+                </div>
+
+                <div class="field">
+                  <label for="business-name">Business Name (optional)</label>
+                  <input id="business-name" name="business_name" type="text" placeholder="Your business name" autocomplete="organization">
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <button class="button-primary" type="submit">Send Project Details</button>
+          <p class="form-note">We'll review what you share and follow up to discuss the next steps.</p>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>

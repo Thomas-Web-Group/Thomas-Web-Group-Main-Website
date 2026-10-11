@@ -1,30 +1,25 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
   <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <a href="/" class="logo d-flex align-items-center me-auto me-xl-0">
-      <img src="assets/img/uploads/logo_dark_transparent.webp" alt="the Thomas Web Group logo">
+    <a href="/" class="logo d-flex align-items-center me-auto me-xl-0" aria-label="Thomas Web Group home">
+      <span class="brand-wordmark"><span>Thomas</span> <span>Web Group</span></span>
     </a>
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="/">Home</a></li>
-        <li class="dropdown"><a href="/websites/"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-          <ul>
-            <li><a href="/websites/">Website Design</a></li>
-            <li><a href="/social-media/">Social Media</a></li>
-            <li><a href="/crm-business-systems/">CRM &amp; Business Systems</a></li>
-            <li><a href="/growth-automation/">Growth Strategy &amp; Automation</a></li>
-          </ul>
-        </li>
-        <li><a href="/work/">Work</a></li>
-        <li><a href="/about/">About</a></li>
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/" class="{% if page.url == '/' %}active{% endif %}"><span class="nav-number">01</span> Home</a></li>
+        <li><a href="/websites/" class="{% if page.url == '/websites/' %}active{% endif %}"><span class="nav-number">02</span> Websites</a></li>
+        <li><a href="/work/" class="{% if page.url == '/work/' %}active{% endif %}"><span class="nav-number">03</span> Work</a></li>
+        <li><a href="/about/" class="{% if page.url == '/about/' %}active{% endif %}"><span class="nav-number">04</span> About</a></li>
+        <li><a href="/contact/" class="{% if page.url == '/contact/' %}active{% endif %}"><span class="nav-number">05</span> Contact</a></li>
+        <li class="mobile-quote"><a class="btn-getstarted" href="/contact/">Get a Project Quote</a></li>
       </ul>
-
-      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
 
-    <a class="btn-getstarted" href="/contact/">Let's Talk</a>
+    <a class="btn-getstarted" href="/contact/">Get a Project Quote</a>
+    <button class="mobile-nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="navmenu">
+      <i class="bi bi-list" aria-hidden="true"></i>
+    </button>
 
   </div>
 </header>

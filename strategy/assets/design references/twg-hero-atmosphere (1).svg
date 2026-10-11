@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="warm-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(820 375) rotate(0) scale(505 355)">
+      <stop stop-color="#FFCA57" stop-opacity=".33"/>
+      <stop offset=".34" stop-color="#E8A92B" stop-opacity=".17"/>
+      <stop offset=".72" stop-color="#B57E15" stop-opacity=".055"/>
+      <stop offset="1" stop-color="#D58B14" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="arc-gold" x1="420" y1="650" x2="1130" y2="-10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBBF24" stop-opacity="0"/>
+      <stop offset=".25" stop-color="#FBBF24" stop-opacity=".55"/>
+      <stop offset=".6" stop-color="#FCD34D" stop-opacity=".75"/>
+      <stop offset=".88" stop-color="#E6A719" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#FBBF24" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="720" fill="url(#warm-glow)"/>
+  <path d="M 475,710 C 445,480 537,190 767,70 C 900,-2 1024,-8 1138,-3" stroke="url(#arc-gold)" stroke-width="1.5"/>
+  <path d="M 555,710 C 541,491 629,295 803,184 C 917,110 1038,77 1180,72" stroke="url(#arc-gold)" stroke-width="1.1" opacity=".64"/>
+  <path d="M 667,710 C 665,533 741,394 859,303 C 962,228 1064,207 1195,202" stroke="url(#arc-gold)" stroke-width=".8" opacity=".35"/>
+</svg>

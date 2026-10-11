@@ -1,6 +1,6 @@
 ---
-title: Small Business Services FAQ | Thomas Web Group
-description: Answers about website design, social media management, CRM and HubSpot support, ongoing services, and working with Thomas Web Group.
+title: Frequently Asked Questions | Thomas Web Group
+description: Answers to common questions about website design, search visibility, social media, CRM systems, automation, and working with Thomas Web Group.
 layout: 'base.njk'
 permalink: /faq/
 ---
@@ -8,8 +8,8 @@ permalink: /faq/
 <main class="main">
   <section id="faq" class="portfolio-details section">
     <div class="container section-title" data-aos="fade-up">
-      <h2>FAQ</h2>
-      <div><span>Websites, Social Media,</span> <span class="description-title">CRM Support</span></div>
+      <h2>Frequently Asked Questions</h2>
+      <div><span>Websites, Marketing,</span> <span class="description-title">and Business Systems</span></div>
     </div>
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row justify-content-center">
@@ -18,24 +18,31 @@ permalink: /faq/
             <div class="project-overview">
               <h1>Questions About Working With Us</h1>
               <div class="accordion project-accordion" id="fullFaq">
-          {% set questions = [
-            ['What services do you offer?', 'We help with website design, social media management, CRM and business systems, and growth strategy and automation.'],
-            ['Can you help with an existing website?', 'Yes. We can improve an existing site or plan a redesign, and can also provide hosting and ongoing website care.'],
-            ['Which social media platforms do you support?', 'Facebook is our primary focus. We also support Instagram and LinkedIn.'],
-            ['Can you help with my current CRM?', 'Yes. We can set up or improve HubSpot and other existing CRM systems, and help organize lead tracking and follow-up.'],
-            ['Do you provide ongoing support?', 'Yes. Monthly support can cover website maintenance, social media posting, CRM administration, and automation checks. We agree on the tasks first.'],
-            ['How does pricing work?', 'We do not publish fixed prices. Cost depends on the work involved; we outline scope and cost before work starts.'],
-            ['Do you work outside East Tennessee?', 'Yes. East Tennessee is our local market, and we also work with businesses nationwide.'],
-            ['What happens after I get in touch?', 'We read your message and email you to clarify what you need and arrange a call.']
-          ] %}
-          {% for item in questions %}
-          <div class="accordion-item" data-aos="fade-up">
-            <h2 class="accordion-header" id="full-faq-heading-{{ loop.index }}"><button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#full-faq-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="full-faq-{{ loop.index }}"><i class="bi bi-question-circle me-2"></i>{{ item[0] }}</button></h2>
-            <div id="full-faq-{{ loop.index }}" class="accordion-collapse collapse {% if loop.first %}show{% endif %}" data-bs-parent="#fullFaq"><div class="accordion-body"><p>{{ item[1] }}</p></div></div>
-          </div>
-          {% endfor %}
+                {% set questions = [
+                  ['What services does Thomas Web Group offer?', 'We help small businesses with websites, Google and AI search visibility, social media, customer and lead management, automation, system integrations, and reporting. Services can be combined based on your business needs.'],
+                  ['Can you improve a website I already have?', 'Yes. We can review your current website and discuss improvements or a redesign. The right approach depends on how the existing site is built and what you want it to accomplish.'],
+                  ['Do you help businesses appear on Google and AI search tools?', 'We can improve the content, structure, and technical foundations that help search engines and AI-powered tools understand your business. These efforts support discoverability, but no provider can guarantee specific rankings or recommendations.'],
+                  ['Can you help with HubSpot or another CRM?', 'Yes. We work with customer management systems, including HubSpot, to help organize information, track opportunities, automate follow-up, and connect business tools.'],
+                  ['Do you offer ongoing support?', 'Yes. Depending on the project, ongoing work may include website updates, social media management, CRM administration, automation, or reporting. The specific responsibilities are agreed upon before work begins.'],
+                  ['How much do your services cost?', "Project pricing depends on the work involved. Tell us what you need, and we'll discuss an appropriate scope and quote."],
+                  ['Do you only work with businesses in East Tennessee?', 'East Tennessee is our local market, but many website, CRM, marketing, and automation projects can be handled remotely.'],
+                  ['What happens after I submit a project inquiry?', "We'll review the information you've provided and follow up to discuss your business, what you're trying to accomplish, and the potential next steps."]
+                ] %}
+                {% for item in questions %}
+                <div class="accordion-item" data-aos="fade-up">
+                  <h2 class="accordion-header" id="full-faq-heading-{{ loop.index }}">
+                    <button class="accordion-button {% if not loop.first %}collapsed{% endif %}" type="button" data-bs-toggle="collapse" data-bs-target="#full-faq-{{ loop.index }}" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="full-faq-{{ loop.index }}"><i class="bi bi-question-circle me-2" aria-hidden="true"></i>{{ item[0] }}</button>
+                  </h2>
+                  <div id="full-faq-{{ loop.index }}" class="accordion-collapse collapse {% if loop.first %}show{% endif %}" data-bs-parent="#fullFaq">
+                    <div class="accordion-body"><p>{{ item[1] }}</p></div>
+                  </div>
+                </div>
+                {% endfor %}
               </div>
-              <div class="text-center mt-5"><h2>Have a question about your project?</h2><a href="/contact/" class="btn btn-primary">Let's Talk</a></div>
+              <div class="text-center mt-5">
+                <h2>Still Have Questions About Your Project?</h2>
+                <a href="/contact/" class="btn btn-primary">Get a Project Quote</a>
+              </div>
             </div>
           </div>
         </div>

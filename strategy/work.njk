@@ -1,14 +1,58 @@
 ---
-title: Website Projects for Local Businesses | Thomas Web Group
-description: Selected Thomas Web Group projects for real businesses, including a local service business and an East Tennessee farm.
+title: Website & Business Projects | Thomas Web Group
+description: Explore Thomas Web Group projects involving websites, online quoting, and practical systems for small businesses, including Dad Cuts Grass and Smoky Mountain Acres.
 layout: 'base.njk'
 permalink: /work/
 ---
 
-<main class="main">
+<main class="main page-shell">
+  <section class="page-intro">
+    <div class="container">
+      <div class="page-kicker">Selected Work</div>
+      <h1>Built for Real Businesses</h1>
+      <p>Every business works differently. These projects show how we've approached website development, customer experience, and practical solutions for businesses with different needs.</p>
+    </div>
+  </section>
 
-  {% include "work.njk" %}
+  <section class="section-block">
+    <div class="container">
+      <div class="work-grid">
+        <article class="work-card">
+          <div class="thumb"><img src="/assets/img/uploads/GREENsqLogo.webp" alt="Dad Cuts Grass logo" loading="lazy"></div>
+          <h3><a href="/work/dad-cuts-grass/">Dad Cuts Grass</a></h3>
+          <p>A lawn care website focused on making it easier for customers to explore services and request quotes online.</p>
+          <div class="card-list">
+            <span>Website Development</span>
+            <span>Online Quotes</span>
+            <span>Lead Conversion</span>
+          </div>
+          <a class="project-cta" href="/work/dad-cuts-grass/">View Project <span aria-hidden="true">→</span></a>
+        </article>
 
-  {% include "call-to-action.njk" %}
+        <article class="work-card">
+          <div class="thumb"><img src="/assets/img/uploads/SmokyMountainAcresLogo.webp" alt="Smoky Mountain Acres logo" loading="lazy"></div>
+          <h3><a href="/work/smoky-mountain-acres/">Smoky Mountain Acres</a></h3>
+          <p>A farm website with livestock listings, product information, and a content management system for easier updates.</p>
+          <div class="card-list">
+            <span>Eleventy</span>
+            <span>Decap CMS</span>
+            <span>Netlify</span>
+          </div>
+          <a class="project-cta" href="/work/smoky-mountain-acres/">View Project <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
 
+  <section class="section-block">
+    <div class="container">
+      <div class="cta-panel">
+        <div>
+          <div class="page-kicker">Your Project Could Be Next</div>
+          <h2>Have a Project in Mind?</h2>
+        </div>
+        <a class="button-primary" href="/contact/">Get a Project Quote</a>
+      </div>
+    </div>
+  </section>
 </main>

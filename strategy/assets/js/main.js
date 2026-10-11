@@ -21,8 +21,12 @@
 
   function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
-    mobileNavToggleBtn.classList.toggle('bi-list');
-    mobileNavToggleBtn.classList.toggle('bi-x');
+    const expanded = document.body.classList.contains('mobile-nav-active');
+    const mobileNavIcon = mobileNavToggleBtn.querySelector('i');
+    mobileNavIcon.classList.toggle('bi-list', !expanded);
+    mobileNavIcon.classList.toggle('bi-x', expanded);
+    mobileNavToggleBtn.setAttribute('aria-expanded', String(expanded));
+    mobileNavToggleBtn.setAttribute('aria-label', expanded ? 'Close navigation' : 'Open navigation');
   }
   if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
@@ -33,7 +37,7 @@
    */
   document.querySelectorAll('#navmenu a').forEach(navmenu => {
     navmenu.addEventListener('click', () => {
-      if (document.querySelector('.mobile-nav-active') && !navmenu.classList.contains('toggle-dropdown')) {
+      if (document.querySelector('.mobile-nav-active')) {
         mobileNavToogle();
       }
     });

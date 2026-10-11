@@ -1,0 +1,25 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% set publicUrls = [
+  '/',
+  '/websites/',
+  '/work/',
+  '/work/dad-cuts-grass/',
+  '/work/smoky-mountain-acres/',
+  '/about/',
+  '/contact/',
+  '/crm-business-systems/',
+  '/growth-automation/',
+  '/social-media/',
+  '/faq/',
+  '/privacy-policy/',
+  '/terms/'
+] %}
+{% for url in publicUrls %}
+  <url><loc>https://thomaswebgroup.com{{ url }}</loc></url>
+{% endfor %}
+</urlset>

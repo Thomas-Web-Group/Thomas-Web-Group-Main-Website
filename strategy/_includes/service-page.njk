@@ -15,7 +15,7 @@
           <div class="about-content">
             <h1>{{ service.heading }}</h1>
             <p class="lead">{{ service.intro }}</p>
-            <a href="/contact/" class="btn btn-primary">Let's Talk</a>
+            <a href="/contact/" class="btn btn-primary">Get a Project Quote</a>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
 
   <section class="services section">
     <div class="container section-title" data-aos="fade-up">
-      <h2>Included</h2>
+      <h2>What We Can Help With</h2>
     </div>
     <div class="container">
       <div class="row gy-4">
@@ -35,6 +35,7 @@
             <h3>{{ item.title }}</h3>
             <p class="mb-0">{{ item.text }}</p>
           </div>
+          {% if service.note %}<p class="mt-4">{{ service.note }}</p>{% endif %}
         </div>
         {% endfor %}
       </div>
