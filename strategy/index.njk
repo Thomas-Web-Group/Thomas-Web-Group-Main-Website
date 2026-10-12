@@ -2,20 +2,19 @@
 title: Thomas Web Group | Websites & Business Growth
 description: Websites, Google and AI search visibility, social media, and business automation for small businesses looking to attract customers and improve operations.
 layout: 'base.njk'
+hero_laptop_mockup: 'assets/img/hero-laptop-mockup.webp'
 ---
 
 <main class="main site-shell">
   <section class="hero-shell">
-    <svg class="hero-signals" viewBox="0 0 1440 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-      <path class="signal-wave signal-wave-one" d="M 948 482 C 800 388 751 282 782 190 C 812 101 908 34 1075 -10" />
-      <path class="signal-wave signal-wave-two" d="M 1006 490 C 868 386 817 284 845 194 C 873 106 960 44 1112 -10" />
-      <path class="signal-wave signal-wave-three" d="M 1062 490 C 935 390 884 291 909 202 C 933 119 1009 56 1150 10" />
-      <path class="signal-wave signal-wave-four" d="M 1120 490 C 1005 390 951 292 974 208 C 995 132 1063 75 1187 35" />
-    </svg>
     <div class="container hero-layout">
       <div class="hero-copy">
         <div class="hero-kicker">Digital Growth & Business Systems</div>
-        <h1>Get Found. Win More Customers. Run Your Business Better.</h1>
+        <h1>
+          <span class="hero-line">Get Found.</span>
+          <span class="hero-line">Win More Customers.</span>
+          <span class="hero-line">Run Your Business Better.</span>
+        </h1>
         <p>We help small businesses build a stronger online presence, turn more inquiries into customers, and reduce repetitive work through better websites, marketing, and connected systems.</p>
 
         <div class="hero-actions">
@@ -24,18 +23,30 @@ layout: 'base.njk'
         </div>
       </div>
 
-      <div class="hero-visual" role="img" aria-label="Decorative laptop mockup">
-        <div class="laptop-mockup" aria-hidden="true">
-          <div class="laptop-screen-frame">
-            <div class="laptop-screen"></div>
-          </div>
-          <div class="laptop-base"></div>
+      <div class="hero-visual" role="img" aria-label="Website preview on laptop mockup">
+        <div class="hero-pulse-container" aria-hidden="true">
+          <div class="pulse-ring pulse-ring-1"></div>
+          <div class="pulse-ring pulse-ring-2"></div>
+          <div class="pulse-ring pulse-ring-3"></div>
+          <div class="pulse-core-glow"></div>
         </div>
+
+        <picture class="hero-laptop-picture">
+          <source srcset="{{ hero_laptop_mockup | default('assets/img/hero-laptop-mockup.webp') }}" type="image/webp">
+          <img
+            src="assets/img/hero-laptop-mockup.png"
+            alt="Smoky Mountain Acres custom business website displayed on a modern laptop mockup"
+            class="hero-laptop-img"
+            width="1024"
+            height="768"
+            loading="eager"
+          >
+        </picture>
       </div>
     </div>
   </section>
 
-  <section class="section-block">
+  <section class="section-block section-portfolio">
     <div class="container">
       <div class="section-heading">
         <div class="section-kicker">Our Work</div>
