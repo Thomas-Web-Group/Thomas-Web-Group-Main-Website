@@ -42,5 +42,8 @@
   {{ content | safe }}
   {% include 'footer.njk' %}
 
+  {% if page.url == '/' %}
+  <script>console.log("Welcome to TWG");</script>
+  {% endif %}
 </body>
 </html>
